@@ -8,12 +8,20 @@ public class CustomerEntity {
 	private int customerId;
 	private String name;
 	private String addressLine1;
+        private String state;
 
 	public CustomerEntity(int customerId, String name, String addressLine1) {
 		this.customerId = customerId;
 		this.name = name;
 		this.addressLine1 = addressLine1;
 	}
+
+    CustomerEntity(int id, String name, String adr, String state) {
+                this.customerId = customerId;
+		this.name = name;
+		this.addressLine1 = addressLine1;
+                this.state = state;
+    }
 
 	/**
 	 * Get the value of customerId
@@ -40,6 +48,15 @@ public class CustomerEntity {
 	 */
 	public String getAddressLine1() {
 		return addressLine1;
+	}
+        
+        /**
+	 * Get the value of state
+	 *
+	 * @return the value of state
+	 */
+	public String getState() {
+		return state;
 	}
 
 
